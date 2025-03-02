@@ -1,6 +1,8 @@
 void main (){
  Set<int>  result =  findsPrimeNumber(30);
- print(result);
+  for (var i in result){
+     print(i);
+  }
 }
 
 
@@ -38,7 +40,7 @@ Set<int> findsPrimeNumber (int n){
   //Step - 4 // If n is still greater then 1 , it is a prime number itself 
 
   if (n > 1){
-    primeFactor.add(1);
+    primeFactor.add(n);
   }
    
    
